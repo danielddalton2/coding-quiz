@@ -23,7 +23,7 @@ header h1 {
     padding: 2%;
 }
 
-.high-scores, .timer {
+.high-scores, #timer {
     color: var(--white);
     font-size: 1.5rem;
     padding: 3%
@@ -42,7 +42,7 @@ header h1 {
     padding: 5%;
 }
 
-.start-button {
+#start-quiz-button {
     background-color: var(--navy);
     color: var(--white);
     font-size: 3rem;
@@ -54,6 +54,6 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
-.start-button:hover {
+#start-quiz-button:hover {
     box-shadow: inset 0px 0px 8px var(--cornflower), 0 0 15px var(--cornflower);
 }

@@ -13,22 +13,68 @@
     <header>
         <h1>Coding Quiz!</h1>
         <div class="high-scores">
-            <a href="#high-scores">High Scores</a>
+            <a href="#" id="viewHighScore">High Scores</a>
         </div>
-        <div class="timer">
-            Time: <span id="timeLeft">0</span>
+        <div id="timer" class="col text-right">
+            <i class="far fa-clock"></i> Time: <span id="timeLeft">0</span>
         </div>
+        <div id="timesUp" class="col text-right" style="display: none;">Time's Up!</div>
     </header>
     <main>
+        
+        <div id="everything" class="row text-left">
+            <div class="col-md-2"></div>
+              <main class="col-md-8 mt-5">
+                  <div id="start" class="m-2 justify-content-center">
+                      <button type="button" id="start-quiz-button" class="btn btn-info ml-5 align-center">Start Quiz</button>
+                  </div>
+
+                  <div id="questionDiv" style="display: none;">
+                    <p id="questionTitle" class="pl-5 ml-2 pt-5 justify-content-center font-weight-bold"></p>
+                    <div class="pl-5 pt-2 pb-3 m-2 justify-content-center">
+                        <p><button id="btn0" class="btn btn-dark"></button></p>
+                        <p><button id="btn1" class="btn btn-dark"></button></p>
+                        <p><button id="btn2" class="btn btn-dark"></button></p>
+                        <p><button id="btn3" class="btn btn-dark"></button></p>
+                        <hr id="lineBreak" style="display: none" class="mt-4">
+                        <p id="answerCheck" style="display: none;"></p>
+                    </div>
+                  </div>
+
+                    <div class="pl-5 ml-2 pt-5 justify-content-center font-weight-bold" id="summary" style="display: none;">
+                        <div class="col-2"></div>
+                        <div class="col-8 text-left">
+                            <h2 class="font-weight-bold pt-2 pb-3 m-2">Your final score is <span id="finalScore"></span> !</h2>
+                            <form>
+                                <p class="pt-2 pb-3 m-2">Enter your initials: <input id="initialInput" class="form-control pt-2 pb-3 mt-2" type="text">
+                                <button type="submit" id="submitInitialBtn" class="btn btn-info mt-3">Submit</button>
+                                </p>
+                            </form>
+                        </div>
+                    <div class="col-2"></div>
+                </div>
+
+                <div id="highScoreSection" class="pl-5 ml-4 pt-5 justify-content-center font-weight-bold" style="display: none;">
+                    <h2 class="font-weight-bold pt-2 pb-3 mb-2">High Scores</h2>                   
+                    
+                    <div id="listOfHighScores" class="list-group list-group-flush pt-2 pb-3 mb-2"></div>
+
+                    <p>
+                        <button type="submit" class="btn btn-info mt-3 mr-3" id="goBackBtn">Go Back</button>
+                        <button type="submit" class="btn btn-info mt-3" id="clearHighScoreBtn">Clear High Scores</button>
+                    </p>
+                    
+                </div>
+              </main>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
         <section>
-            <div class="description">
-                Answer the code related questions within the time limit! Each wrong answer will penalize you by taking away 10 seconds!
-            </div>
-        </section>
-        <section>
-            <button class="start-button">Start</button>
+            <article class="description">
+                <p>Answer the code related questions within the time limit! Each wrong answer will penalize you by taking away 10 seconds!</p>
+            </article>
         </section>
     </main>
-    <script src="assets/script.js"></script>
 </body>
 </html>
