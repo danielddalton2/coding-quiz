@@ -6,15 +6,15 @@ A quick 60 second quiz to test your javascript coding knowledge.
 
 ## Installation
 
-ADD URL HERE
+https://danielddalton2.github.io/coding-quiz/
 
 ## Usage
 
-ADD SCREENSHOT HERE
+![alt text](./assets/screenshot-of-webpage.jpg)
 
 ## Credits
 
-ADD CREDITS HERE
+NA 
 
 ## License
 
